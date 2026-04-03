@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Radiant Pack | Aluminum Packaging Solutions</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO -->
-    <meta name="description" content="Aluminum can, bottle, aerosol valve, BOV system and filling machine manufacturer">
-    <meta name="keywords" content="aluminum packaging, aerosol valve, BOV system">
+    <meta name="description" content="Professional manufacturer of aluminum can, aluminum bottle, aerosol valve, BOV system and filling machines">
+    <meta name="keywords" content="aluminum can, aluminum bottle, aerosol valve, BOV, filling machine, packaging manufacturer">
+    <meta name="robots" content="index, follow">
 
-    <!-- 自动语言 -->
-    <script>
-    var userLang = navigator.language || navigator.userLanguage;
-    if (userLang.startsWith('zh') && window.location.pathname === '/') {
-        window.location.href = '/cn/';
-    }
-    </script>
+    <!-- 多语言SEO -->
+    <link rel="alternate" href="https://radiantpack.github.io/" hreflang="en">
+    <link rel="alternate" href="https://radiantpack.github.io/cn/" hreflang="zh">
 
     <style>
         body {
             margin:0;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             color:#333;
         }
 
@@ -30,12 +27,18 @@
             padding:20px 40px;
             display:flex;
             justify-content:space-between;
+            align-items:center;
         }
 
         nav a {
             color:#fff;
             margin-left:20px;
             text-decoration:none;
+            font-size:14px;
+        }
+
+        nav a:hover {
+            opacity:0.7;
         }
 
         .hero {
@@ -47,10 +50,21 @@
 
         .hero h1 {
             font-size:42px;
+            margin-bottom:10px;
+        }
+
+        .hero p {
+            font-size:18px;
+            opacity:0.9;
         }
 
         .section {
             padding:60px 40px;
+        }
+
+        .section h2 {
+            text-align:center;
+            margin-bottom:40px;
         }
 
         .products {
@@ -62,7 +76,7 @@
         .card {
             width:260px;
             margin:20px;
-            border-radius:10px;
+            border-radius:12px;
             overflow:hidden;
             box-shadow:0 10px 25px rgba(0,0,0,0.1);
             transition:0.3s;
@@ -70,7 +84,7 @@
         }
 
         .card:hover {
-            transform:translateY(-5px);
+            transform:translateY(-8px);
         }
 
         .card img {
@@ -81,6 +95,7 @@
 
         .card h3 {
             padding:15px;
+            font-size:18px;
         }
 
         .card a {
@@ -91,16 +106,25 @@
             color:#fff;
             text-align:center;
             text-decoration:none;
-            border-radius:5px;
+            border-radius:6px;
+        }
+
+        .card a:hover {
+            background:#1e293b;
         }
 
         .contact-box {
             background:#f3f4f6;
             padding:40px;
-            border-radius:10px;
+            border-radius:12px;
             max-width:600px;
             margin:auto;
             text-align:center;
+            box-shadow:0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .contact-box p {
+            margin:10px 0;
         }
 
         .btn {
@@ -110,7 +134,11 @@
             background:#0f172a;
             color:#fff;
             text-decoration:none;
-            border-radius:5px;
+            border-radius:6px;
+        }
+
+        .btn:hover {
+            background:#1e293b;
         }
 
         footer {
@@ -118,6 +146,7 @@
             color:#fff;
             text-align:center;
             padding:20px;
+            margin-top:40px;
         }
     </style>
 </head>
@@ -130,7 +159,10 @@
         <a href="/">Home</a>
         <a href="/products.html">Products</a>
         <a href="/contact.html">Contact</a>
-        <a href="/">EN</a> | <a href="/cn/">中文</a>
+        <span style="margin-left:20px;">
+            <a href="/">EN</a> |
+            <a href="/cn/">中文</a>
+        </span>
     </nav>
 </header>
 
@@ -142,30 +174,30 @@
 
 <!-- 产品 -->
 <div class="section">
-    <h2 style="text-align:center;">Our Products</h2>
+    <h2>Our Products</h2>
 
     <div class="products">
 
         <div class="card">
-            <img src="/images/can1.jpg">
+            <img src="/images/can1.jpg" alt="Aluminum Can">
             <h3>Aluminum Can</h3>
             <a href="/products/aluminum-can.html">View Details</a>
         </div>
 
         <div class="card">
-            <img src="/images/bottle1.jpg">
+            <img src="/images/bottle1.jpg" alt="Aluminum Bottle">
             <h3>Aluminum Bottle</h3>
             <a href="/products/aluminum-bottle.html">View Details</a>
         </div>
 
         <div class="card">
-            <img src="/images/valve.jpg">
+            <img src="/images/valve.jpg" alt="Aerosol Valve">
             <h3>Aerosol Valve</h3>
             <a href="/products/aerosol-valve.html">View Details</a>
         </div>
 
         <div class="card">
-            <img src="/images/machine.jpg">
+            <img src="/images/machine.jpg" alt="Filling Machine">
             <h3>Filling Machine</h3>
             <a href="/products/filling-machine.html">View Details</a>
         </div>
@@ -173,14 +205,14 @@
     </div>
 </div>
 
-<!-- 联系方式 -->
+<!-- 联系 -->
 <div class="section">
-    <h2 style="text-align:center;">Contact Us</h2>
+    <h2>Contact Us</h2>
 
     <div class="contact-box">
         <p><strong>Dean Zhang</strong></p>
         <p>📞 +86 13818226201</p>
-        <p>📧 dean@shradiantpack.com</p>
+        <p>📧 <a href="mailto:dean@shradiantpack.com">dean@shradiantpack.com</a></p>
 
         <a class="btn" href="mailto:dean@shradiantpack.com">Email Us</a>
         <a class="btn" href="https://wa.me/8613818226201">WhatsApp</a>
