@@ -1,66 +1,93 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Radiant Pack - Aluminum Packaging Solutions</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radiant Pack | Aluminum Packaging Solutions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <meta name="description" content="Aluminum can, bottle, aerosol valve, BOV system and filling machine manufacturer">
+    <meta name="keywords" content="aluminum can, aluminum bottle, aerosol valve, BOV, filling machine">
+
+    <!-- 自动语言 -->
+    <script>
+    var userLang = navigator.language || navigator.userLanguage;
+    if (userLang.startsWith('zh') && window.location.pathname === '/') {
+        window.location.href = '/cn/';
+    }
+    </script>
+
+    <style>
+        body {font-family: Arial; margin:0;}
+        header {background:#111; color:#fff; padding:20px;}
+        nav a {color:#fff; margin-right:15px;}
+        .hero {padding:60px; text-align:center; background:#eee;}
+        .section {padding:40px;}
+        .products {display:flex; flex-wrap:wrap;}
+        .card {width:250px; margin:15px; border:1px solid #ccc; padding:15px;}
+        .card img {width:100%;}
+        footer {background:#111; color:#fff; text-align:center; padding:20px;}
+    </style>
 </head>
 
 <body>
 
-<!-- Header -->
 <header>
-    <h1>Radiant Pack</h1>
+    <h2>Radiant Pack</h2>
     <nav>
+        <a href="/">Home</a>
+        <a href="/products.html">Products</a>
+        <a href="/contact.html">Contact</a>
         <a href="/">EN</a> | <a href="/cn/">中文</a>
     </nav>
 </header>
 
-<!-- Banner -->
-<section>
-    <h2>SHANGHAI RADIANT PACK TECHNOLOGY CO., LTD</h2>
-    <p>Professional Aluminum Packaging Solutions Provider</p>
-</section>
+<div class="hero">
+    <h1>Aluminum Packaging Solutions</h1>
+    <p>Professional Manufacturer & Supplier</p>
+</div>
 
-<!-- About -->
-<section>
-    <h2>About Us</h2>
-    <p>
-        We specialize in aluminum packaging products and filling systems,
-        providing reliable and innovative solutions for global customers.
-    </p>
-</section>
-
-<!-- Products -->
-<section>
+<div class="section">
     <h2>Our Products</h2>
-    <ul>
-        <li>Aluminum Can</li>
-        <li>Aluminum Bottle</li>
-        <li>Aluminum Cup</li>
-        <li>Valve & Lid</li>
-        <li>Bag-on-Valve (BOV)</li>
-        <li>Aerosol Filling Machine</li>
-        <li>Bag-on-Valve Filling Machine</li>
-    </ul>
-</section>
 
-<!-- Contact -->
-<section>
-    <h2>Contact Us</h2>
+    <div class="products">
+
+        <div class="card">
+            <img src="/images/can1.jpg">
+            <h3>Aluminum Can</h3>
+            <a href="/products/aluminum-can.html">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="/images/bottle1.jpg">
+            <h3>Aluminum Bottle</h3>
+            <a href="/products/aluminum-bottle.html">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="/images/valve.jpg">
+            <h3>Aerosol Valve</h3>
+            <a href="/products/aerosol-valve.html">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="/images/machine.jpg">
+            <h3>Filling Machine</h3>
+            <a href="/products/filling-machine.html">View Details</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <h2>Contact</h2>
     <p>
         Dean Zhang<br>
         Phone: +86 13818226201<br>
-        Email: dean@shradiantpack.com
+        Email: <a href="mailto:dean@shradiantpack.com">dean@shradiantpack.com</a>
     </p>
-    <p>
-        Address:<br>
-        L Floor, No.1, Lane 255 North Guangxi Road,<br>
-        Huangpu District, Shanghai, China
-    </p>
-</section>
+</div>
 
-<!-- Footer -->
 <footer>
     <p>© 2026 Radiant Pack</p>
 </footer>
