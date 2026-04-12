@@ -25,25 +25,10 @@ body{margin:0;font-family:Arial;color:#222}
 }
 .hero h1{margin:0;font-size:40px}
 
-/* PRODUCTS TITLE */
+/* SECTION TITLE */
 .section-title{
   text-align:center;
-  padding-top:40px;
-}
-
-/* ===== SLIDER（已移动到中间） ===== */
-.slider{
-  width:100%;
-  height:650px;
-  overflow:hidden;
-  margin:20px 0 40px 0;
-}
-
-.slider img{
-  width:100%;
-  height:650px;
-  object-fit:cover;
-  display:block;
+  padding-top:30px;
 }
 
 /* PRODUCTS */
@@ -63,6 +48,7 @@ body{margin:0;font-family:Arial;color:#222}
   transition:0.3s;
   background:#fff;
 }
+
 .card:hover{
   transform:translateY(-5px);
   box-shadow:0 10px 20px rgba(0,0,0,0.1);
@@ -82,6 +68,11 @@ body{margin:0;font-family:Arial;color:#222}
   justify-content:space-around;
   padding:50px;
   flex-wrap:wrap;
+}
+
+.features div{
+  text-align:center;
+  padding:10px;
 }
 
 /* CTA */
@@ -108,8 +99,6 @@ body{margin:0;font-family:Arial;color:#222}
 /* MOBILE */
 @media(max-width:768px){
   .grid{flex-direction:column;}
-  .slider{height:300px;}
-  .slider img{height:300px;}
 }
 </style>
 </head>
@@ -129,6 +118,11 @@ body{margin:0;font-family:Arial;color:#222}
 <div class="hero">
   <h1>Our Products</h1>
   <p>Aluminum Packaging Solutions for Global Industries</p>
+</div>
+
+<!-- PRODUCTS TITLE -->
+<div class="section-title">
+  <h2>Main Product Categories</h2>
 </div>
 
 <!-- PRODUCTS -->
@@ -157,61 +151,34 @@ body{margin:0;font-family:Arial;color:#222}
 
 </div>
 
-<!-- 🔥 SLIDER（在Our Products下面） -->
-<div class="section-title">
-  <h2>Product Showcase</h2>
-</div>
-
-<div class="slider">
-  <!-- 默认图：保证不会空白 -->
-  <img id="slideImg" src="images/pic07.jpg" alt="Product Banner">
-</div>
-
 <!-- FEATURES -->
 <div class="features">
-  <div><h3>OEM/ODM</h3><p>Custom solutions</p></div>
-  <div><h3>Stable Supply</h3><p>Mass production</p></div>
-  <div><h3>Global Export</h3><p>50+ countries</p></div>
+  <div>
+    <h3>OEM/ODM</h3>
+    <p>Custom solutions</p>
+  </div>
+
+  <div>
+    <h3>Stable Supply</h3>
+    <p>Mass production capability</p>
+  </div>
+
+  <div>
+    <h3>Global Export</h3>
+    <p>50+ countries served</p>
+  </div>
 </div>
 
 <!-- CTA -->
 <div class="cta">
   <h2>Need Custom Packaging Solution?</h2>
-  <a class="btn" href="mailto:dean@shradiantpack.com">Get a Quote</a>
+  <a class="btn" href="mailto:gervas@foxmail.com">Get a Quote</a>
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
 © 2026 Radiant Packaging
 </div>
-
-<!-- SLIDER JS（修复版） -->
-<script>
-const slides = [
-  "images/pic07.jpg",
-  "images/pic08.jpg",
-  "images/pic09.jpg",
-  "images/pic10.jpg"
-];
-
-let index = 0;
-
-function showSlide(){
-  document.getElementById("slideImg").src = slides[index];
-}
-
-function nextSlide(){
-  index++;
-  if(index >= slides.length) index = 0;
-  showSlide();
-}
-
-// 确保DOM加载后执行
-window.onload = function(){
-  showSlide();
-  setInterval(nextSlide, 3000);
-};
-</script>
 
 </body>
 </html>
