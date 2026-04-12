@@ -3,93 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Radiant Packaging</title>
+
+<title>Radiant Packaging | Aluminum Aerosol Cans Manufacturer</title>
+<meta name="description" content="Professional manufacturer of aluminum aerosol cans, closures and filling machines. OEM & ODM supported.">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+body {margin:0;font-family:Arial;color:#222}
 
-/* 导航栏 */
+/* 导航 */
 .nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: #111;
-    color: white;
+    display:flex;justify-content:space-between;
+    padding:20px;background:#111;color:#fff;
 }
-.nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-}
+.nav a {color:#fff;margin-left:20px;text-decoration:none}
 
-/* Banner */
+/* Hero */
 .hero {
-    background: url("https://images.unsplash.com/photo-1581092919532-6c2e47e4dc4f") center/cover;
-    height: 500px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    height:600px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1581094794329-c8112a89af12") center/cover;
+    display:flex;flex-direction:column;
+    justify-content:center;align-items:center;
+    color:#fff;text-align:center;
 }
-.hero h1 {
-    font-size: 48px;
-}
-.hero p {
-    font-size: 20px;
+.hero h1 {font-size:50px;margin:0}
+.hero p {font-size:20px;margin:20px 0}
+.btn {
+    padding:15px 30px;background:#fff;color:#000;
+    text-decoration:none;margin-top:10px;
 }
 
-/* 产品区 */
-.products {
-    display: flex;
-    padding: 50px;
-    gap: 20px;
-}
+/* 产品 */
+.section {padding:80px 50px;text-align:center}
+.products {display:flex;gap:30px;margin-top:40px}
 .card {
-    flex: 1;
-    border: 1px solid #eee;
-    padding: 20px;
-    text-align: center;
+    flex:1;padding:30px;border:1px solid #eee;
+    transition:0.3s;
 }
-.card:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+.card:hover {transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.1)}
 
 /* 优势 */
 .advantages {
-    background: #f5f5f5;
-    padding: 50px;
-    display: flex;
-    justify-content: space-around;
+    background:#f5f5f5;display:flex;
+    justify-content:space-around;padding:60px;
 }
 
-/* 联系 */
-.contact {
-    padding: 50px;
-    text-align: center;
-}
-input, textarea {
-    width: 300px;
-    margin: 10px;
-    padding: 10px;
-}
-button {
-    padding: 10px 30px;
-    background: black;
-    color: white;
-    border: none;
+/* CTA */
+.cta {
+    background:#111;color:#fff;text-align:center;
+    padding:60px;
 }
 
-.footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+/* footer */
+.footer {background:#000;color:#fff;text-align:center;padding:20px}
 </style>
 </head>
 
@@ -99,68 +65,62 @@ button {
 <div class="nav">
     <div><b>RadiantPack</b></div>
     <div>
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Solutions</a>
+        <a href="index.html">Home</a>
+        <a href="aerosol-cans.html">Products</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
     </div>
 </div>
 
-<!-- Banner -->
+<!-- Hero -->
 <div class="hero">
     <h1>Aluminum Packaging Solutions</h1>
-    <p>Reliable Aerosol Cans, Closures & Filling Systems</p>
+    <p>From Aerosol Cans to Filling Systems</p>
+    <a class="btn" href="aerosol-cans.html">Explore Products</a>
 </div>
 
 <!-- 产品 -->
-<div class="products">
-    <div class="card">
-        <h3>Aluminum Aerosol Cans</h3>
-        <p>High-quality aluminum packaging for cosmetics, pharma and food.</p>
-    </div>
-    <div class="card">
-        <h3>Closures & Caps</h3>
-        <p>Innovative integrated caps and sealing solutions.</p>
-    </div>
-    <div class="card">
-        <h3>Filling Equipment</h3>
-        <p>Advanced filling systems for efficient production lines.</p>
+<div class="section">
+    <h2>Our Products</h2>
+    <div class="products">
+
+        <div class="card">
+            <h3>Aluminum Aerosol Cans</h3>
+            <p>High-quality packaging for cosmetics, pharma & food</p>
+            <a href="aerosol-cans.html">View More</a>
+        </div>
+
+        <div class="card">
+            <h3>Closures & Caps</h3>
+            <p>Innovative integrated cap solutions</p>
+            <a href="caps.html">View More</a>
+        </div>
+
+        <div class="card">
+            <h3>Filling Machines</h3>
+            <p>Efficient automated filling systems</p>
+            <a href="filling-machines.html">View More</a>
+        </div>
+
     </div>
 </div>
 
 <!-- 优势 -->
 <div class="advantages">
-    <div>
-        <h3>Global Supply</h3>
-        <p>Export to 50+ countries</p>
-    </div>
-    <div>
-        <h3>OEM/ODM</h3>
-        <p>Customized solutions</p>
-    </div>
-    <div>
-        <h3>Fast Delivery</h3>
-        <p>Stable production capacity</p>
-    </div>
-    <div>
-        <h3>Quality Control</h3>
-        <p>Strict inspection system</p>
-    </div>
+    <div><h3>Global Export</h3><p>50+ countries</p></div>
+    <div><h3>OEM/ODM</h3><p>Customization</p></div>
+    <div><h3>Fast Delivery</h3><p>Stable supply</p></div>
+    <div><h3>Quality Control</h3><p>Strict inspection</p></div>
 </div>
 
-<!-- 联系 -->
-<div class="contact">
-    <h2>Contact Us</h2>
-    <input placeholder="Your Name"><br>
-    <input placeholder="Email"><br>
-    <textarea placeholder="Message"></textarea><br>
-    <button>Send</button>
+<!-- CTA -->
+<div class="cta">
+    <h2>Looking for a reliable supplier?</h2>
+    <a class="btn" href="mailto:gervas@foxmail.com">Get a Quote</a>
 </div>
 
-<!-- Footer -->
 <div class="footer">
-    © 2026 Radiant Packaging
+© 2026 Radiant Packaging
 </div>
 
 </body>
