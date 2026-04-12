@@ -1,227 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Radiant Pack | Aluminum Packaging Solutions</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiant Packaging</title>
 
-    <!-- SEO -->
-    <meta name="description" content="Professional manufacturer of aluminum can, aluminum bottle, aerosol valve, BOV system and filling machines">
-    <meta name="keywords" content="aluminum can, aluminum bottle, aerosol valve, BOV, filling machine, packaging manufacturer">
-    <meta name="robots" content="index, follow">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-    <!-- 多语言SEO -->
-    <link rel="alternate" href="https://radiantpack.github.io/" hreflang="en">
-    <link rel="alternate" href="https://radiantpack.github.io/cn/" hreflang="zh">
+/* 导航栏 */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+.nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
 
-    <style>
-        body {
-            margin:0;
-            font-family: Arial, sans-serif;
-            color:#333;
-        }
+/* Banner */
+.hero {
+    background: url("https://images.unsplash.com/photo-1581092919532-6c2e47e4dc4f") center/cover;
+    height: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 48px;
+}
+.hero p {
+    font-size: 20px;
+}
 
-        header {
-            background:#0f172a;
-            color:#fff;
-            padding:20px 40px;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-        }
+/* 产品区 */
+.products {
+    display: flex;
+    padding: 50px;
+    gap: 20px;
+}
+.card {
+    flex: 1;
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-        nav a {
-            color:#fff;
-            margin-left:20px;
-            text-decoration:none;
-            font-size:14px;
-        }
+/* 优势 */
+.advantages {
+    background: #f5f5f5;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
 
-        nav a:hover {
-            opacity:0.7;
-        }
+/* 联系 */
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+input, textarea {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+button {
+    padding: 10px 30px;
+    background: black;
+    color: white;
+    border: none;
+}
 
-        .hero {
-            background:linear-gradient(to right,#0f172a,#1e293b);
-            color:#fff;
-            text-align:center;
-            padding:100px 20px;
-        }
-
-        .hero h1 {
-            font-size:42px;
-            margin-bottom:10px;
-        }
-
-        .hero p {
-            font-size:18px;
-            opacity:0.9;
-        }
-
-        .section {
-            padding:60px 40px;
-        }
-
-        .section h2 {
-            text-align:center;
-            margin-bottom:40px;
-        }
-
-        .products {
-            display:flex;
-            flex-wrap:wrap;
-            justify-content:center;
-        }
-
-        .card {
-            width:260px;
-            margin:20px;
-            border-radius:12px;
-            overflow:hidden;
-            box-shadow:0 10px 25px rgba(0,0,0,0.1);
-            transition:0.3s;
-            background:#fff;
-        }
-
-        .card:hover {
-            transform:translateY(-8px);
-        }
-
-        .card img {
-            width:100%;
-            height:180px;
-            object-fit:cover;
-        }
-
-        .card h3 {
-            padding:15px;
-            font-size:18px;
-        }
-
-        .card a {
-            display:block;
-            margin:10px 15px 20px;
-            padding:10px;
-            background:#0f172a;
-            color:#fff;
-            text-align:center;
-            text-decoration:none;
-            border-radius:6px;
-        }
-
-        .card a:hover {
-            background:#1e293b;
-        }
-
-        .contact-box {
-            background:#f3f4f6;
-            padding:40px;
-            border-radius:12px;
-            max-width:600px;
-            margin:auto;
-            text-align:center;
-            box-shadow:0 5px 15px rgba(0,0,0,0.05);
-        }
-
-        .contact-box p {
-            margin:10px 0;
-        }
-
-        .btn {
-            display:inline-block;
-            margin:10px;
-            padding:12px 20px;
-            background:#0f172a;
-            color:#fff;
-            text-decoration:none;
-            border-radius:6px;
-        }
-
-        .btn:hover {
-            background:#1e293b;
-        }
-
-        footer {
-            background:#0f172a;
-            color:#fff;
-            text-align:center;
-            padding:20px;
-            margin-top:40px;
-        }
-    </style>
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h2>Radiant Pack</h2>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/products.html">Products</a>
-        <a href="/contact.html">Contact</a>
-        <span style="margin-left:20px;">
-            <a href="/">EN</a> |
-            <a href="/cn/">中文</a>
-        </span>
-    </nav>
-</header>
+<!-- 导航 -->
+<div class="nav">
+    <div><b>RadiantPack</b></div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Solutions</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
 
 <!-- Banner -->
 <div class="hero">
     <h1>Aluminum Packaging Solutions</h1>
-    <p>Professional Manufacturer of Aluminum Can, Bottle & Aerosol Systems</p>
+    <p>Reliable Aerosol Cans, Closures & Filling Systems</p>
 </div>
 
 <!-- 产品 -->
-<div class="section">
-    <h2>Our Products</h2>
+<div class="products">
+    <div class="card">
+        <h3>Aluminum Aerosol Cans</h3>
+        <p>High-quality aluminum packaging for cosmetics, pharma and food.</p>
+    </div>
+    <div class="card">
+        <h3>Closures & Caps</h3>
+        <p>Innovative integrated caps and sealing solutions.</p>
+    </div>
+    <div class="card">
+        <h3>Filling Equipment</h3>
+        <p>Advanced filling systems for efficient production lines.</p>
+    </div>
+</div>
 
-    <div class="products">
-
-        <div class="card">
-            <img src="/images/can1.jpg" alt="Aluminum Can">
-            <h3>Aluminum Can</h3>
-            <a href="/products/aluminum-can.html">View Details</a>
-        </div>
-
-        <div class="card">
-            <img src="/images/bottle1.jpg" alt="Aluminum Bottle">
-            <h3>Aluminum Bottle</h3>
-            <a href="/products/aluminum-bottle.html">View Details</a>
-        </div>
-
-        <div class="card">
-            <img src="/images/valve.jpg" alt="Aerosol Valve">
-            <h3>Aerosol Valve</h3>
-            <a href="/products/aerosol-valve.html">View Details</a>
-        </div>
-
-        <div class="card">
-            <img src="/images/machine.jpg" alt="Filling Machine">
-            <h3>Filling Machine</h3>
-            <a href="/products/filling-machine.html">View Details</a>
-        </div>
-
+<!-- 优势 -->
+<div class="advantages">
+    <div>
+        <h3>Global Supply</h3>
+        <p>Export to 50+ countries</p>
+    </div>
+    <div>
+        <h3>OEM/ODM</h3>
+        <p>Customized solutions</p>
+    </div>
+    <div>
+        <h3>Fast Delivery</h3>
+        <p>Stable production capacity</p>
+    </div>
+    <div>
+        <h3>Quality Control</h3>
+        <p>Strict inspection system</p>
     </div>
 </div>
 
 <!-- 联系 -->
-<div class="section">
+<div class="contact">
     <h2>Contact Us</h2>
-
-    <div class="contact-box">
-        <p><strong>Dean Zhang</strong></p>
-        <p>📞 +86 13818226201</p>
-        <p>📧 <a href="mailto:dean@shradiantpack.com">dean@shradiantpack.com</a></p>
-
-        <a class="btn" href="mailto:dean@shradiantpack.com">Email Us</a>
-        <a class="btn" href="https://wa.me/8613818226201">WhatsApp</a>
-    </div>
+    <input placeholder="Your Name"><br>
+    <input placeholder="Email"><br>
+    <textarea placeholder="Message"></textarea><br>
+    <button>Send</button>
 </div>
 
-<footer>
-    <p>© 2026 SHANGHAI RADIANT PACK TECHNOLOGY CO., LTD</p>
-</footer>
+<!-- Footer -->
+<div class="footer">
+    © 2026 Radiant Packaging
+</div>
 
 </body>
 </html>
